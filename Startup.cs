@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccessControl.Models;
+using AccessControl.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,7 @@ namespace AccessControl
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddScoped<IAccessTypeRepository, AccessTypeRepository>();
             services.AddDbContext<ControlAccessContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
