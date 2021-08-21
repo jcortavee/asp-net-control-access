@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AccessControl.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccessControl.Models
 {
@@ -9,9 +10,17 @@ namespace AccessControl.Models
             Database.EnsureCreated();
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AccessTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+        }
+
         public DbSet<AccessType> AccessTypes { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Access> Accesses { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }
