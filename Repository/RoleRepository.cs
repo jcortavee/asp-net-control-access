@@ -5,34 +5,34 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AccessControl.Repository
 {
-    public class AccessTypeRepository : IAccessTypeRepository
+    public class RoleRepository : IRoleRepository
     {
         private readonly ControlAccessContext _context;
 
-        public AccessTypeRepository(ControlAccessContext context)
+        public RoleRepository(ControlAccessContext context)
         {
             _context = context;
         }
 
-        public async Task<AccessType> Get(int id)
+        public async Task<Role> Get(int id)
         {
-            return await _context.AccessTypes.FindAsync(id);
+            return await _context.Roles.FindAsync(id);
         }
 
-        public async Task<IReadOnlyList<AccessType>> GetAll()
+        public async Task<IReadOnlyList<Role>> GetAll()
         {
-            return await _context.AccessTypes.ToListAsync();
+            return await _context.Roles.ToListAsync();
         }
 
-        public async Task<AccessType> Create(AccessType entity)
+        public async Task<Role> Create(Role entity)
         {
-            _context.AccessTypes.Add(entity);
+            _context.Roles.Add(entity);
             await _context.SaveChangesAsync();
 
             return entity;
         }
 
-        public async Task Update(AccessType entity)
+        public async Task Update(Role entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
@@ -40,8 +40,8 @@ namespace AccessControl.Repository
 
         public async Task Delete(int id)
         {
-            var accessTypeToDelete = await _context.AccessTypes.FindAsync(id);
-            _context.AccessTypes.Remove(accessTypeToDelete);
+            var roleToDelete = await _context.Roles.FindAsync(id);
+            _context.Roles.Remove(roleToDelete);
             await _context.SaveChangesAsync();
         }
     }

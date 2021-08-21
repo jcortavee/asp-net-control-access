@@ -2,7 +2,7 @@
 
 namespace AccessControl.Repository
 {
-    public interface IAccessTypeRepository : IGenericRepository<AccessType>
+    public interface IEmployeeRepository : IGenericRepository<Employee>
     {
         
     }
