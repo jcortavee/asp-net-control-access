@@ -30,6 +30,7 @@ namespace AccessControl
         {
 
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IAccessRepository, AccessRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddDbContext<ControlAccessContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
