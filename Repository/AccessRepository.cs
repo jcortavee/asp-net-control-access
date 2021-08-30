@@ -30,7 +30,7 @@ namespace AccessControl.Repository
             return await _context.Accesses
                 .Where(a => a.Date > startDate && a.Date < endDate)
                 .OrderByDescending(a => a.Date)
-                .FirstAsync();
+                .FirstOrDefaultAsync();
         }
 
         public async Task<IReadOnlyList<Access>> GetAll()
