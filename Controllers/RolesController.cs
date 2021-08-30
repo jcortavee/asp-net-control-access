@@ -2,10 +2,12 @@
 using System.Threading.Tasks;
 using AccessControl.Models;
 using AccessControl.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccessControl.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class RolesController : Controller

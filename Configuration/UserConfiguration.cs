@@ -9,15 +9,16 @@ namespace AccessControl.Configuration
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("Users");
+            
             builder.HasData(
                 new User()
                 {
                     Id = 1,
                     Username = "Admin",
                     Password = "Pass1234",
-                    Token = null,
                     RoleId = 1
                 });
+
         }
         
         

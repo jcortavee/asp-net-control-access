@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace AccessControl.Models
 {
@@ -11,6 +13,8 @@ namespace AccessControl.Models
         public string LastName { get; set; }
         
         public User User { get; set; }
-        public ICollection<Access> Accesses { get; set; }
+        [JsonIgnore]
+        public int UserId { get; set; }
+        public ICollection<Access>? Accesses { get; set; }
     }
 }

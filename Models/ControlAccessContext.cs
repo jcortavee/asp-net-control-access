@@ -15,6 +15,7 @@ namespace AccessControl.Models
             modelBuilder.ApplyConfiguration(new AccessTypeConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
         }
 
         public DbSet<AccessType> AccessTypes { get; set; }
