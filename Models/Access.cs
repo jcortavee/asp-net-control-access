@@ -8,7 +8,7 @@ namespace AccessControl.Models
         public Employee? Employee { get; set; }
         public int? EmployeeId { get; set; }
         public AccessType AccessType { get; set; }
+        public int AccessTypeId { get; set; }
         public DateTime Date { get; set; }
-        public DateTime Time { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "USrFYPxJh5urKS+ryj1d+zrX+v7okLL7xwrEm5NDSpe8zulPzTzKal+SvgESgViyw6ShqHLFhrdvYaxykbwqTg==",
+  "dgSpecHash": "TzZ8BiuUE3a2831a49McMozwFdQRvsJAoD6hRCan57bIu69zo2opR4QqhOoyfcv1Xi3gKxcfZEPrj2p9Kg6s9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\AccessControl.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.logging.debug\\5.0.0\\microsoft.extensions.logging.debug.5.0.0.nupkg.sha512",
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\microsoft.identity.client\\4.14.0\\microsoft.identity.client.4.14.0.nupkg.sha512",

@@ -11,10 +11,12 @@ namespace AccessControl.Services
     {
         
         private readonly IUserRepository _userRepository;
+        private readonly IAccessRepository _accessRepository;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, IAccessRepository accessRepository)
         {
             _userRepository = userRepository;
+            _accessRepository = accessRepository;
         }
 
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
@@ -31,6 +33,38 @@ namespace AccessControl.Services
             // return null if user not found
             if (user == null)
                 return null;
+            
+            var access = await _accessRepository.GetLastInserted();
+            if (access == null)
+            {
+                await _accessRepository.Create(new Access()
+                {
+                    EmployeeId = user.Employee.Id,
+                    AccessTypeId = 1,
+                    Date = DateTime.Now
+                });
+            }
+            else
+            {
+                if (access.AccessTypeId == 1)
+                {
+                    await _accessRepository.Create(new Access()
+                    {
+                        EmployeeId = user.Employee.Id,
+                        AccessTypeId = 2,
+                        Date = DateTime.Now
+                    });
+                }
+                else
+                {
+                    await _accessRepository.Create(new Access()
+                    {
+                        EmployeeId = user.Employee.Id,
+                        AccessTypeId = 1,
+                        Date = DateTime.Now
+                    });
+                }
+            }
 
             // authentication successful so return user details
             return user;
