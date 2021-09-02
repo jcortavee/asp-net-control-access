@@ -211,3 +211,6 @@ C:\Users\Jose Juan Ramirez\Documents\Documentos\Projects\asp-net-control-access\
 C:\Users\Jose Juan Ramirez\Documents\Documentos\Projects\asp-net-control-access\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Jose Juan Ramirez\Documents\Documentos\Projects\asp-net-control-access\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Jose Juan Ramirez\Documents\Documentos\Projects\asp-net-control-access\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\niels\Documents\proyectodesarrollo\asp-net-control-access\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\niels\Documents\proyectodesarrollo\asp-net-control-access\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\niels\Documents\proyectodesarrollo\asp-net-control-access\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

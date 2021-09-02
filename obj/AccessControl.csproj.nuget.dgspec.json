@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\AccessControl.csproj": {}
+    "C:\\Users\\niels\\Documents\\proyectodesarrollo\\asp-net-control-access\\AccessControl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\AccessControl.csproj": {
+    "C:\\Users\\niels\\Documents\\proyectodesarrollo\\asp-net-control-access\\AccessControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\AccessControl.csproj",
+        "projectUniqueName": "C:\\Users\\niels\\Documents\\proyectodesarrollo\\asp-net-control-access\\AccessControl.csproj",
         "projectName": "AccessControl",
-        "projectPath": "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\AccessControl.csproj",
-        "packagesPath": "C:\\Users\\Jose Juan Ramirez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose Juan Ramirez\\Documents\\Documentos\\Projects\\asp-net-control-access\\obj\\",
+        "projectPath": "C:\\Users\\niels\\Documents\\proyectodesarrollo\\asp-net-control-access\\AccessControl.csproj",
+        "packagesPath": "C:\\Users\\niels\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\niels\\Documents\\proyectodesarrollo\\asp-net-control-access\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Jose Juan Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\niels\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
